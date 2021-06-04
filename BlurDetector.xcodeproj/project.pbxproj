@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		EAA287A6266A212A0012DE01 /* BlurDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA287A5266A212A0012DE01 /* BlurDetectorTests.swift */; };
 		EAA287A8266A212A0012DE01 /* BlurDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA2879A266A212A0012DE01 /* BlurDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAA287BB266A21530012DE01 /* BlurDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA287B8266A21530012DE01 /* BlurDetector.swift */; };
+		EAA287FE266A24C90012DE01 /* MLPatchExtractor.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA287FD266A24C90012DE01 /* MLPatchExtractor.xcframework */; };
+		EAA28802266A25090012DE01 /* MobileNetV2_BlurDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EAA28801266A25090012DE01 /* MobileNetV2_BlurDetector.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		EAA287A5266A212A0012DE01 /* BlurDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurDetectorTests.swift; sourceTree = "<group>"; };
 		EAA287A7266A212A0012DE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAA287B8266A21530012DE01 /* BlurDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurDetector.swift; sourceTree = "<group>"; };
+		EAA287FD266A24C90012DE01 /* MLPatchExtractor.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MLPatchExtractor.xcframework; sourceTree = "<group>"; };
+		EAA28801266A25090012DE01 /* MobileNetV2_BlurDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2_BlurDetector.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA287FE266A24C90012DE01 /* MLPatchExtractor.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,8 @@
 		EAA287B5266A21530012DE01 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EAA28801266A25090012DE01 /* MobileNetV2_BlurDetector.mlmodel */,
+				EAA287FD266A24C90012DE01 /* MLPatchExtractor.xcframework */,
 				EAA287B8266A21530012DE01 /* BlurDetector.swift */,
 			);
 			path = Classes;
@@ -205,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA28802266A25090012DE01 /* MobileNetV2_BlurDetector.mlmodel in Sources */,
 				EAA287BB266A21530012DE01 /* BlurDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

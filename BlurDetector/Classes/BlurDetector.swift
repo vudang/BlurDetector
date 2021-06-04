@@ -9,7 +9,8 @@
 
 import CoreML
 import Vision
-@_exported import MLPatchExtractor
+import MLPatchExtractor
+import UIKit
 
 public struct BlurDetectorResult {
     /// Evaluated image (single patch).
